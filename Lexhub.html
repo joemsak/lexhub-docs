@@ -80,7 +80,7 @@
   
     <dt class="r1 last">Defined in:</dt>
     <dd class="r1 last">lib/lexhub.rb<span class="defines">,<br />
-  lib/lexhub/repo.rb,<br /> lib/lexhub/base.rb,<br /> lib/lexhub/version.rb</span>
+  lib/lexhub/repo.rb,<br /> lib/lexhub/base.rb,<br /> lib/lexhub/version.rb,<br /> lib/lexhub/configuration.rb</span>
 </dd>
   
 </dl>
@@ -103,7 +103,7 @@
     
   
     
-      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Lexhub/Base.html" title="Lexhub::Base (class)">Base</a></span>, <span class='object_link'><a href="Lexhub/Repo.html" title="Lexhub::Repo (class)">Repo</a></span>
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Lexhub/Base.html" title="Lexhub::Base (class)">Base</a></span>, <span class='object_link'><a href="Lexhub/Configuration.html" title="Lexhub::Configuration (class)">Configuration</a></span>, <span class='object_link'><a href="Lexhub/Repo.html" title="Lexhub::Repo (class)">Repo</a></span>
     
   
 </p>
@@ -134,15 +134,188 @@
 
 
 
+  <h2>Class Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#configuration-class_method" title="configuration (class method)">+ (Object) <strong>configuration</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute configuration.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
 
 
 
 
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#configure-class_method" title="configure (class method)">+ (Object) <strong>configure</strong> {|configuration| ... }</a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  <div id="class_attr_details" class="attr_details">
+    <h2>Class Attribute Details</h2>
+    
+      
+      <span id="configuration=-class_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="configuration-class_method">
+  
+    + (<tt>Object</tt>) <strong>configuration</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute configuration</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+11
+12
+13</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lexhub.rb', line 11</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_configuration'>configuration</span>
+  <span class='ivar'>@configuration</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="configure-class_method">
+  
+    + (<tt>Object</tt>) <strong>configure</strong> {|configuration| ... }
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="#configuration-class_method" title="Lexhub.configuration (method)">configuration</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lexhub.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_configure'>configure</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_configuration'>configuration</span> <span class='op'>||=</span> <span class='const'>Configuration</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='kw'>yield</span><span class='lparen'>(</span><span class='id identifier rubyid_configuration'>configuration</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
 
 </div>
 
     <div id="footer">
-  Generated on Sun Sep 30 14:45:35 2012 by
+  Generated on Sun Sep 30 18:07:13 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
