@@ -120,6 +120,33 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#github-instance_method" title="#github (instance method)">- (Object) <strong>github</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets/Sets Github github.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#oauth_token-instance_method" title="#oauth_token (instance method)">- (Object) <strong>oauth_token</strong> </a>
     
 
@@ -215,15 +242,17 @@
       <pre class="lines">
 
 
-7
-8
-9</pre>
+10
+11
+12
+13</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 10</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_oauth_token'>oauth_token</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_github'>github</span>      <span class='op'>=</span> <span class='kw'>nil</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -236,9 +265,52 @@
     <h2>Instance Attribute Details</h2>
     
       
-      <span id="oauth_token=-instance_method"></span>
+      <span id="github=-instance_method"></span>
       <div class="method_details first">
-  <h3 class="signature first" id="oauth_token-instance_method">
+  <h3 class="signature first" id="github-instance_method">
+  
+    - (<tt>Object</tt>) <strong>github</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets/Sets Github github</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_github'>github</span>
+  <span class='ivar'>@github</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="oauth_token=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="oauth_token-instance_method">
   
     - (<tt>Object</tt>) <strong>oauth_token</strong> 
   
@@ -284,7 +356,7 @@
 </div>
 
     <div id="footer">
-  Generated on Sun Sep 30 18:15:47 2012 by
+  Generated on Sun Sep 30 18:20:59 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
