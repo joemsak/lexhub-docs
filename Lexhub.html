@@ -158,7 +158,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute configuration.</p>
+<p>Public Gets/Sets Configuration configuration.</p>
 </div></span>
   
 </li>
@@ -180,7 +180,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#configure-class_method" title="configure (class method)">+ (Object) <strong>configure</strong> {|configuration| ... }</a>
+      <a href="#configure-class_method" title="configure (class method)">+ (Configuration) <strong>configure</strong> {|configuration| ... }</a>
     
 
     
@@ -194,7 +194,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Configure the gem.</p>
+</div></span>
   
 </li>
 
@@ -220,7 +222,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute configuration</p>
+<p>Public Gets/Sets Configuration configuration</p>
 
 
   </div>
@@ -234,12 +236,12 @@
       <pre class="lines">
 
 
-11
 12
-13</pre>
+13
+14</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/lexhub.rb', line 11</span>
+      <pre class="code"><span class="info file"># File 'lib/lexhub.rb', line 12</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_configuration'>configuration</span>
   <span class='ivar'>@configuration</span>
@@ -259,7 +261,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="configure-class_method">
   
-    + (<tt>Object</tt>) <strong>configure</strong> {|configuration| ... }
+    + (<tt><span class='object_link'><a href="Lexhub/Configuration.html" title="Lexhub::Configuration (class)">Configuration</a></span></tt>) <strong>configure</strong> {|configuration| ... }
   
 
   
@@ -268,11 +270,23 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Configure the gem</p>
+
 
   </div>
 </div>
 <div class="tags">
   
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><span class='const'>Lexhub</span><span class='period'>.</span><span class='id identifier rubyid_configure'>configure</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_config'>config</span><span class='op'>|</span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_oauth_token'>oauth_token</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>123abc</span><span class='tstring_end'>'</span></span>
+<span class='kw'>end</span></pre>
+    
+  </div>
+
 <p class="tag_title">Yields:</p>
 <ul class="yield">
   
@@ -286,6 +300,24 @@
     </li>
   
 </ul>
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lexhub/Configuration.html" title="Lexhub::Configuration (class)">Configuration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>object</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -293,13 +325,13 @@
       <pre class="lines">
 
 
-14
-15
-16
-17</pre>
+24
+25
+26
+27</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/lexhub.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'lib/lexhub.rb', line 24</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_configure'>configure</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_configuration'>configuration</span> <span class='op'>||=</span> <span class='const'>Configuration</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
@@ -315,7 +347,7 @@
 </div>
 
     <div id="footer">
-  Generated on Sun Sep 30 18:07:13 2012 by
+  Generated on Sun Sep 30 18:15:47 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
