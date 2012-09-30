@@ -587,17 +587,13 @@
 
 50
 51
-52
-53
-54</pre>
+52</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/lexhub/repo.rb', line 50</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_words'>words</span>
-  <span class='kw'>return</span> <span class='ivar'>@words</span> <span class='kw'>if</span> <span class='kw'>defined?</span><span class='lparen'>(</span><span class='ivar'>@words</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_keys'>keys</span>   <span class='op'>=</span> <span class='id identifier rubyid_downcased_commit_message_words'>downcased_commit_message_words</span>
-  <span class='ivar'>@words</span> <span class='op'>=</span> <span class='id identifier rubyid_counted_words'>counted_words</span><span class='lparen'>(</span><span class='id identifier rubyid_keys'>keys</span><span class='rparen'>)</span>
+  <span class='ivar'>@words</span> <span class='op'>||=</span> <span class='id identifier rubyid_counted_words'>counted_words</span><span class='lparen'>(</span><span class='id identifier rubyid_downcased_commit_message_words'>downcased_commit_message_words</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -609,7 +605,7 @@
 </div>
 
     <div id="footer">
-  Generated on Sun Sep 30 14:32:14 2012 by
+  Generated on Sun Sep 30 14:35:15 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
