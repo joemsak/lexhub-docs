@@ -120,6 +120,33 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#excluded_words-instance_method" title="#excluded_words (instance method)">- (Object) <strong>excluded_words</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets/Sets Array excluded_words.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#github-instance_method" title="#github (instance method)">- (Object) <strong>github</strong> </a>
     
 
@@ -242,17 +269,19 @@
       <pre class="lines">
 
 
-10
-11
-12
-13</pre>
+16
+17
+18
+19
+20</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 16</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_oauth_token'>oauth_token</span> <span class='op'>=</span> <span class='kw'>nil</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_github'>github</span>      <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_oauth_token'>oauth_token</span>    <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_github'>github</span>         <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_excluded_words'>excluded_words</span> <span class='op'>=</span> <span class='const'>EXCLUDED_WORDS</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -265,9 +294,52 @@
     <h2>Instance Attribute Details</h2>
     
       
-      <span id="github=-instance_method"></span>
+      <span id="excluded_words=-instance_method"></span>
       <div class="method_details first">
-  <h3 class="signature first" id="github-instance_method">
+  <h3 class="signature first" id="excluded_words-instance_method">
+  
+    - (<tt>Object</tt>) <strong>excluded_words</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets/Sets Array excluded_words</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_excluded_words'>excluded_words</span>
+  <span class='ivar'>@excluded_words</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="github=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="github-instance_method">
   
     - (<tt>Object</tt>) <strong>github</strong> 
   
@@ -292,12 +364,12 @@
       <pre class="lines">
 
 
-8
-9
-10</pre>
+11
+12
+13</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 11</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_github'>github</span>
   <span class='ivar'>@github</span>
@@ -335,12 +407,12 @@
       <pre class="lines">
 
 
-5
-6
-7</pre>
+8
+9
+10</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 5</span>
+      <pre class="code"><span class="info file"># File 'lib/lexhub/configuration.rb', line 8</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_oauth_token'>oauth_token</span>
   <span class='ivar'>@oauth_token</span>
@@ -356,7 +428,7 @@
 </div>
 
     <div id="footer">
-  Generated on Sun Sep 30 18:20:59 2012 by
+  Generated on Tue Oct  2 19:39:23 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
